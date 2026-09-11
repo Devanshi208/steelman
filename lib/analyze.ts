@@ -119,7 +119,6 @@ export async function readSources(
   const thin = sources.filter((s) => !s.abstract || s.abstract.length <= 90);
   const usable = [...withAbstract, ...thin].slice(0, 28);
   if (!usable.length) return [];
-    console.log(`  readSources: ${usable.length} usable of ${sources.length}`);
 
   const listing = usable
     .map(
@@ -184,7 +183,7 @@ export async function readSources(
     break;
   }
   const reads: Read[] = Array.isArray(cur) ? cur : [];
-  console.log(`  model returned ${reads.length} reads`);
+
 
   const out: AnalysedSource[] = [];
   for (const r of reads) {

@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
     // 1 — understand what is being claimed, and what to search for
         console.log(`\n▸ search: "${asked}"`);
     const framing = await frame(asked);
-    console.log(`  framed ok, queries:`, framing.queries);
+  
 
     // 2 — retrieve. Nothing here is generated; every source is a real record.
         const raw = await gather(framing.queries);
