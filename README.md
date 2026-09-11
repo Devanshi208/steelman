@@ -10,6 +10,9 @@
 </p>
 
 ---
+Live: https://steelman-liart.vercel.app
+
+GitHub: https://github.com/Devanshi208
 
 ### ✦ What it is
 
